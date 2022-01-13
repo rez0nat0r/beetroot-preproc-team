@@ -1,0 +1,247 @@
+@import "normalize";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway:wght@400;500&family=Roboto:wght@400;900&display=swap');
+
+.wrapper {
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper__title {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.title__first {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #898f8f;
+    margin-bottom: 10px;
+}
+
+.title__second {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 66px;
+    color: #ffcc00;
+    margin-bottom: 40px;
+}
+
+.title__picture {
+    height: 17px;
+    width: 450px;
+    margin: 0 auto 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-gripfire {
+    margin: 0 8px;
+    color: #ffcc00;
+}
+
+.title__picture--left,
+.title__picture--right {
+    content: "";
+    height: 2px;
+    width: 210px;
+    background-color: #ffcc00;
+}
+
+.wrapper__body {
+    height: 600px;
+    width: 1170px;
+    margin: 0 auto 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.body__left,
+.body__right {
+    width: 420px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.body__bound {
+    width: 2px;
+    background-color: #ffcc00;
+}
+
+.arrow {
+    width: 16px;
+    height: 25px;
+    font-size: 25px;
+    color: #ffcc00;
+    text-align: center;
+}
+
+.arrow:hover {
+    cursor: pointer;
+}
+
+.left__arrow {
+    left: -80px;
+}
+
+.right__arrow {
+    left: 100%;
+    margin-left: 80px;
+}
+
+.left__content {
+    height: 420px;
+    width: 100%;
+    background-image: url(../img/stuff__img1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.right__content {
+    height: 400px;
+    width: 100%;
+}
+
+.right__content--name {
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    text-align: center;
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+.right__content--bound {
+    width: 100px;
+    height: 2px;
+    background-color: #ffcc00;
+    margin: 0 auto 20px;
+}
+
+.right__content--skill {
+    font-family: "Raleway", sans-serif;
+    font-weight: regular;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.right__content--socials {
+    list-style: none;
+    width: 140px;
+    height: 30px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socials__item {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    text-align: center;
+    color: #ccc;
+    transition: 300ms;
+}
+
+.socials__item i {
+    line-height: 27px;
+}
+
+.socials__item:hover {
+    cursor: pointer;
+    color: #000;
+}
+
+.right_text {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: medium;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.right__lines {
+    width: 50px;
+    height: 4px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 30px;
+}
+
+.right__lines .line__item:nth-child(1),
+.right__lines .line__item:nth-child(3) {
+    width: 10px;
+    height: 100%;
+    background-color: #ffcc00;
+}
+
+.right__lines .line__item:nth-child(2) {
+    width: 20px;
+    background-color: #ffcc00;
+}
+
+.right__button {
+    width: 120px;
+    height: 24px;
+    border: 2px solid #ffcc00;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    color: #666;
+}
+
+.right__button:hover {
+    cursor: pointer;
+}
+
+.wrapper__dots {
+    width: 50px;
+    height: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 auto 30px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ffcc00;
+}
+
+.dot:hover {
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #ffcc00;
+    background-color: #fff;
+}
+
+.dot.active {
+    width: 12px;
+    height: 12px;
+    border: 2px solid #ffcc00;
+    background-color: #fff;
+}
